@@ -1,0 +1,28 @@
+﻿<Window x:Class="AudioNormalizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioNormalizer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Button Name="btn_StartOrStop" Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click"/>
+        <TextBox Name="AudioCells" HorizontalAlignment="Left" Height="23" Margin="10,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="UpTime" HorizontalAlignment="Left" Height="23" Margin="10,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="AudioOutName" HorizontalAlignment="Left" Height="23" Margin="10,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="MaxPeakVol" HorizontalAlignment="Left" Height="23" Margin="318,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="AvgVol" HorizontalAlignment="Left" Height="23" Margin="318,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Width="75"  Click="Save_Click"/>
+        <Label Content="AudioCells" HorizontalAlignment="Left" Margin="6,57,0,0" VerticalAlignment="Top"/>
+        <Label Content="UpTime" HorizontalAlignment="Left" Margin="6,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="MaxPeakVol" HorizontalAlignment="Left" Margin="315,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="AvgVol" HorizontalAlignment="Left" Margin="315,113,0,0" VerticalAlignment="Top"/>
+        <Canvas Name="canva" HorizontalAlignment="Left" Height="172" Margin="10,236,0,0" VerticalAlignment="Top" Width="772"/>
+        <Label Content="AudioOutName" HorizontalAlignment="Left" Margin="6,164,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="InitVol" HorizontalAlignment="Left" Height="23" Margin="168,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="InitVol" HorizontalAlignment="Left" Margin="163,58,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="MinVol" HorizontalAlignment="Left" Height="23" Margin="168,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="MinVol" HorizontalAlignment="Left" Margin="164,113,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
